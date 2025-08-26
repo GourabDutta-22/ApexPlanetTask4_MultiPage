@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio - Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <header>
+      <nav class="navbar">
+        <div class="logo">MyPortfolio</div>
+        <ul id="nav-links">
+          <li><a href="index.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="todo.html">To-Do App</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><button id="darkModeToggle">🌙</button></li>
+        </ul>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <section class="contact">
+        <h2 class="contactText">Contact Me</h2>
+        <form id="contactForm">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+        <p id="formStatus" class="contactMsg"></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <header>
+      <nav class="navbar">
+        <div class="logo">MyPortfolio</div>
+        <ul id="nav-links">
+          <li><a href="index.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="todo.html" class="active">To-Do App</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><button id="darkModeToggle" type="button">🌙</button></li>
+        </ul>
+        <button class="menu-toggle" type="button" onclick="toggleMenu()">☰</button>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <section class="todo">
+        <h2>To-Do List</h2>
+        <form id="todoForm">
+          <input type="text" id="taskInput" placeholder="Enter a new task" required>
+          <button type="submit">Add Task</button>
+        </form>
+        <ul id="taskList"></ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

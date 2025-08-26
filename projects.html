@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <header>
+      <nav class="navbar">
+        <div class="logo">MyPortfolio</div>
+        <ul id="nav-links">
+          <li><a href="index.html">About</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="todo.html">To-Do App</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><button id="darkModeToggle">🌙</button></li>
+        </ul>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <section class="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+          <a href="todo.html" class="project-card">
+            <h3>📝 To-Do List App</h3>
+            <p>A task manager with localStorage persistence.</p>
+          </a>
+          <a href="products.html" class="project-card">
+            <h3>🛒 Product Listing</h3>
+            <p>E-commerce style product filtering & sorting system.</p>
+          </a>
+          <a href="index.html" class="project-card">
+            <h3>🌐 Portfolio Website</h3>
+            <p>This responsive website showcasing my work.</p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
